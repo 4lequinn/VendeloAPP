@@ -8,4 +8,8 @@ class ProductsController < ApplicationController
         # Recibimos el id enviado por parámetro
         @product = Product.find(params[:id])
     end
+
+    def new 
+        @product = Product.new
+    end
 end
